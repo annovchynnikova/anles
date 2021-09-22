@@ -227,17 +227,19 @@ header {
   .header-mob-menubg.active {
     display: block; }
 
-@media screen and (max-width: 991px) {
-  .header-mob-open {
-    width: 30px;
-    height: 21px;
-    background-position: center;
-    background-size: contain;
-    background-image: url("../img/mob-menu.svg");
-    cursor: pointer; } }
-
-.header-mob-open.active {
+.header-mob-open {
   display: none; }
+  @media screen and (max-width: 991px) {
+    .header-mob-open {
+      display: block;
+      width: 30px;
+      height: 21px;
+      background-position: center;
+      background-size: contain;
+      background-image: url("../img/mob-menu.svg");
+      cursor: pointer; } }
+  .header-mob-open.active {
+    display: none; }
 
 .header-mob-items {
   display: flex;
@@ -247,7 +249,8 @@ header {
 
 .header-mob-links {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .header-mob-links a {
     font-size: 15px;
     margin: 0 0 32px 0; }
@@ -439,20 +442,35 @@ main {
       left: 0px;
       background-color: black; }
   .top-items {
-    display: flex;
     margin-top: 26px;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 24px 20px; }
+    @media screen and (max-width: 1565px) {
+      .top-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    @media screen and (max-width: 1265px) {
+      .top-items {
+        grid-template-columns: 1fr 1fr 1fr; } }
+    @media screen and (max-width: 935px) {
+      .top-items {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 10px; } }
   .top-item {
     max-width: 320px;
     position: relative;
-    margin-right: 28px;
     margin-top: 20px; }
-    .top-item:last-child {
-      margin-right: 0; }
-      @media screen and (max-width: 1562px) {
-        .top-item:last-child {
-          margin-right: 28px; } }
+    @media screen and (max-width: 445px) {
+      .top-item-title {
+        font-size: 12px;
+        min-height: 28px;
+        overflow: hidden;
+        display: -webkit-box;
+        line-height: 1.2em;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; } }
+    .top-item-img {
+      width: 100%; }
     .top-item-sticker {
       background: #2A86F2;
       border-radius: 4px 0px;
@@ -538,6 +556,13 @@ main {
     color: #0C0C0C;
     margin-left: 75px;
     margin-top: 15px; }
+  .clients-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .clients-logo-container {
+      margin-top: 30px; }
 
 .catalog-links-item {
   text-align: center; }
