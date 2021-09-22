@@ -45,6 +45,7 @@ header {
       .header-links-item {
         font-size: 14px; } }
     .header-links-item a {
+      text-decoration: none;
       padding: 12px 25px; }
       @media screen and (max-width: 1550px) {
         .header-links-item a {
@@ -64,6 +65,7 @@ header {
     .header-social {
       display: none; } }
   .header-social a {
+    text-decoration: none;
     display: block;
     height: 26px;
     width: 26px;
@@ -87,6 +89,7 @@ header {
   .header-lang-menu {
     display: none; }
     .header-lang-menu a {
+      text-decoration: none;
       display: block;
       margin-bottom: 8px;
       color: #4F4F4F;
@@ -246,6 +249,7 @@ header {
   flex-direction: column;
   align-items: center; }
   .header-mob-links a {
+    text-decoration: none;
     font-size: 15px;
     margin: 0 0 32px 0; }
 
@@ -373,14 +377,16 @@ footer {
 
 .footer-social {
   display: flex; }
-  @media screen and (max-width: 991px) {
-    .footer-social a {
-      margin-right: 23px; }
-      .footer-social a:last-child {
-        margin-right: 0px; } }
-  @media screen and (max-width: 390px) {
-    .footer-social a {
-      margin-right: 12px; } }
+  .footer-social a {
+    text-decoration: none; }
+    @media screen and (max-width: 991px) {
+      .footer-social a {
+        margin-right: 23px; }
+        .footer-social a:last-child {
+          margin-right: 0px; } }
+    @media screen and (max-width: 390px) {
+      .footer-social a {
+        margin-right: 12px; } }
 
 .footer-catalog {
   display: flex;
@@ -489,6 +495,8 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      .top-item-links a {
+        text-decoration: none; }
       @media screen and (max-width: 790px) {
         .top-item-links {
           flex-direction: column; } }
