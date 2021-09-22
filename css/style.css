@@ -359,6 +359,7 @@ footer {
     margin-top: 25px; } }
 
 .footer-links a {
+  text-decoration: none;
   font-weight: 500;
   line-height: 1.2em;
   margin-bottom: 22px; }
@@ -400,6 +401,7 @@ footer {
     flex-direction: column;
     width: 100%; }
     .footer-catalog-links a {
+      text-decoration: none;
       padding: 12px 25px;
       margin: 0;
       display: block;
