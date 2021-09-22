@@ -586,6 +586,10 @@ a {
 .catalog-links-blue {
   border: 1px solid #2A86F2;
   margin-right: 22px; }
+  .catalog-links-blue:hover {
+    color: #2A86F2; }
 
 .catalog-links-green {
   border: 1px solid #48BE00; }
+  .catalog-links-green:hover {
+    color: #48BE00; }
